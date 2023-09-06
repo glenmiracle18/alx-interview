@@ -46,10 +46,10 @@ if __name__ == "__main__":
         sys.exit(1)
     try:
         n = int(sys.argv[1])
-    except TypeError:
+    except:
         print("N must be a number")
         sys.exit(1)
     if n < 4:
-        print("N must be a numberi")
+        print("N must be atleast 4")
         sys.exit(1)
     nqueens(n)
